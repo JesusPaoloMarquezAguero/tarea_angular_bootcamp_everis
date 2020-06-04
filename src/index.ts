@@ -1,13 +1,8 @@
-import {Bootcamp} from './classes/bootcamp.class';
+import {Pelicula} from './classes/pelicula.class';
 
-let curso_bootcamp=new Bootcamp('Angular','Everis');
+let bootcamp_pelicula=new Pelicula('La mascara','Chuck Russell',new Date('10/18/1994'),101,false);
 
-curso_bootcamp.agregarEstudiante('cristian')
-curso_bootcamp.agregarEstudiante('paul')
-curso_bootcamp.agregarEstudiante('paolo')
+bootcamp_pelicula.presentarPelicula();
 
-curso_bootcamp.presentarClase();
-document.body.innerHTML = "<h1>Esta es la clase de" + curso_bootcamp.nombre + ", de la empresa: " + curso_bootcamp.empresa 
-+ ", con los siguientes alumnos: " + curso_bootcamp.estudiantes
-"</h1>"
+
 
